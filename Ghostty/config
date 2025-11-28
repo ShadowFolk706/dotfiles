@@ -57,6 +57,7 @@ cursor-click-to-move = true
 mouse-hide-while-typing = true
 
 background-opacity = 0.85
+# background-opacity = 1
 background-blur = 17
 
 unfocused-split-fill = #000000
@@ -69,7 +70,7 @@ link-url = true
 maximize = false
 fullscreen = false
 
-title = working-directory
+title = " "
 
 # keybinds
 keybind = global:cmd+opt+comma=toggle_quick_terminal
@@ -187,6 +188,8 @@ resize-overlay-duration = 750ms
 clipboard-trim-trailing-spaces = false
 clipboard-paste-protection = true
 
+copy-on-select = false
+
 confirm-close-surface = false
 
 quit-after-last-window-closed = false
@@ -212,6 +215,8 @@ custom-shader = ./shaders/bloom.glsl
 # custom-shader = ./shaders/StarshipReentry.glsl
 # ------------------------------------------------------------
 
+bell-features = system, audio, no-attention, no-title, no-border
+bell-audio-volume = .5
 
 macos-titlebar-style = native
 window-decoration = true
