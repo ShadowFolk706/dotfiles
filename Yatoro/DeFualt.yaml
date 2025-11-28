@@ -1,0 +1,326 @@
+commandLine:
+  modeNormal:
+    fg: red
+  modeCommand:
+    fg: green
+  playStatus:
+    fg: 0069a6
+  nowPlayingArtist:
+    fg: a52800
+  nowPlayingTitle:
+    fg: a65900
+  time:
+    fg: ffff75
+  completions:
+    bg: black
+  completionSelected:
+    bg: brightBlack
+
+songDetail:
+  border:
+    fg: red
+  artistIndices:
+    fg: a52800
+  albumIndex: 
+    fg: dadea6
+  songTitle:
+    fg: a65900
+  artistsText:
+    fg: a52800
+  albumText:
+    fg: dadea6
+  albumItem:
+    border:
+      fg: dadea6
+    pageName:
+      fg: dadea6
+    albumRight:
+      fg: dadea6
+    artistRight:
+      fg: a52800
+    genreRight:
+      fg: green
+  artistItem:
+    border:
+      fg: a52800
+    pageName:
+      fg: a52800
+    artistRight:
+      fg: a52800
+    genreRight:
+      fg: green
+    albumsRight:
+      fg: dadea6
+
+recommendationDetail:
+  border:
+    fg: blue
+  albumsText:
+    fg: dadea6
+  albumIndices:
+    fg: dadea6
+  stationsText:
+    fg: magenta
+  stationIndices:
+    fg: magenta
+  playlistsText:
+    fg: yellow
+  playlistIndices:
+    fg: yellow
+  albumItem:
+    border:
+      fg: dadea6
+    pageName:
+      fg: dadea6
+    albumRight:
+      fg: dadea6
+    artistRight:
+      fg: a52800
+    genreRight:
+      fg: green
+  playlistItem:
+    border:
+      fg: yellow
+    pageName:
+      fg: yellow
+    playlistRight:
+      fg: yellow
+    curatorRight:
+      fg: blue
+    descriptionRight:
+      fg: green
+  stationItem:
+    border:
+      fg: magenta
+    pageName:
+      fg: magenta
+    stationRight:
+      fg: magenta
+    isLiveRight:
+      fg: blue
+    notesRight:
+      fg: green
+
+
+artistItem:
+    border:
+      fg: 006a8a
+    pageName:
+      fg: 006a8a
+    artistRight:
+      fg: a52800
+    genreRight:
+      fg: green
+    albumsRight:
+      fg: dadea6
+
+artistDetail:
+  border:
+    fg: 006a8a
+  topSongIndices:
+    fg: a65900
+  albumIndices:
+    fg: dadea6
+  artistTitle:
+    fg: a52800
+  topSongsText:
+    fg: a65900
+  albumsText:
+    fg: dadea6
+  albumItem:
+    border:
+      fg: dadea6
+    pageName:
+      fg: dadea6
+    albumRight:
+      fg: dadea6
+    artistRight:
+      fg: a52800
+    genreRight:
+      fg: green
+  songItem:
+    border:
+      fg: a65900
+    pageName:
+      fg: a65900
+    songRight:
+      fg: a65900
+    albumRight:
+      fg: dadea6
+    artistRight:
+      fg: a52800
+
+albumDetail:
+  border:
+    fg: dadea6
+  artistsText:
+    fg: a52800
+  artistIndices:
+    fg: a52800
+  songsText:
+    fg: a65900
+  songIndices:
+    fg: a65900
+  songItem:
+    border:
+      fg: a65900
+    pageName:
+      fg: a65900
+    songRight:
+      fg: a65900
+    albumRight:
+      fg: dadea6
+    artistRight:
+      fg: a52800
+  artistItem:
+    border:
+      fg: a52800
+    pageName:
+      fg: a52800
+    artistRight:
+      fg: a52800
+    genreRight:
+      fg: green
+    albumsRight:
+      fg: dadea6
+
+playlistDetail:
+  border:
+    fg: blue
+  songIndices:
+    fg: a65900
+  songsText:
+    fg: a65900
+  songItem:
+    border:
+      fg: a65900
+    pageName:
+      fg: a65900
+    songRight:
+      fg: a65900
+    albumRight:
+      fg: dadea6
+    artistRight:
+      fg: a52800
+
+nowPlaying:
+  page:
+    fg: ff00ff
+  pageName:
+    fg: red
+  border:
+    fg: red
+  songRight:
+    fg: a65900
+  albumRight:
+    fg: dadea6
+  artistRight:
+    fg: a52800
+  controls:
+    fg: 854015
+  sliderKnob:
+    fg: ab5211
+  duration:
+    fg: 854015
+  currentTime:
+    fg: 854015
+
+search:
+  border:
+    fg: bd5515
+  pageName:
+    fg: bd5515
+  itemIndices:
+    fg: 854015
+  albumItem:
+    border:
+      fg: dadea6
+    pageName:
+      fg: dadea6
+    albumRight:
+      fg: dadea6
+    artistRight:
+      fg: a52800
+    genreRight:
+      fg: green
+  artistItem:
+    border:
+      fg: a52800
+    pageName:
+      fg: a52800
+    artistRight:
+      fg: a52800
+    genreRight:
+      fg: green
+    albumsRight:
+      fg: dadea6
+
+  playlistItem:
+    border:
+      fg: yellow
+    pageName:
+      fg: yellow
+    playlistRight:
+      fg: yellow
+    curatorRight:
+      fg: ba7900
+    descriptionRight:
+      fg: ba9200
+
+  stationItem:
+    border:
+      fg: magenta
+    pageName:
+      fg: magenta
+    stationRight:
+      fg: magenta
+    isLiveRight:
+      fg: blue
+    notesRight:
+      fg: green
+      
+  songItem:
+    border:
+      fg: a65900
+    pageName:
+      fg: a65900
+    songRight:
+      fg: a65900
+    albumRight:
+      fg: dadea6
+    artistRight:
+      fg: a52800
+
+  recommendationItem:
+    border:
+      fg: red
+    pageName:
+      fg: red
+    titleRight:
+      fg: red
+    refreshDateRight:
+      fg: green
+    typesRight:
+      fg: cyan
+    
+
+queue:
+  border:
+    fg: c48c0a
+  pageName:
+    fg: c48c0a
+  shuffleMode:
+    fg: c48c0a
+  repeatMode:
+    fg: c48c0a
+  songItem:
+    border:
+      fg: a65900
+    pageName:
+      fg: a65900
+    songRight:
+      fg: a65900
+    albumRight:
+      fg: dadea6
+    artistRight:
+      fg: a52800
