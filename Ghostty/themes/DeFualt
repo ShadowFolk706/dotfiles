@@ -1,9 +1,11 @@
 # rød
 #background=#211111
 # mørktrød
-background = #0d0000
+# background = #0d0000
 # blå
-#background = #000f21
+# background = #000f21
+# svart
+background = #000000
 
 palette = 0=#51576d
 palette = 1=#e93356
@@ -38,14 +40,15 @@ palette = 14=#0b3240
 # palette = 14=#c9a554
 palette = 15=#e5e5e5
 
-foreground=#A79983
-foreground=#c9baa5
+# foreground=#A79983
+# foreground=#c9baa5
+foreground=#f5f0e9
 
 # selection-foreground=#EADCB2
 selection-background=#471818
 
 # minimum-contrast=1
 
-
 # cursor-color=#fbedc4
 cursor-color=#ffffff
+
