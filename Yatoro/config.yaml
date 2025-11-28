@@ -1,5 +1,6 @@
 ui:
   frameDelay: 5000000
+  theme: "DeFualt"
 
   artwork:
     blit: 'pixel'
