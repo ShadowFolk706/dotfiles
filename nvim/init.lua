@@ -26,13 +26,17 @@ vim.opt.termguicolors = true
 vim.opt.updatetime = 250
 vim.opt.scrolloff = 8
 vim.opt.clipboard = "unnamedplus"
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = "yes:1"
+vim.opt.statuscolumn = "%=%l │ "
+vim.opt.laststatus = 3
+vim.opt.cmdheight = 0
+
 vim.opt.numberwidth = 3
 
 vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-vim.opt.foldcolumn = "0"
-vim.opt.foldenable = true
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldcolumn = "1"
+vim.opt.foldenable = false
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 vim.opt.fillchars = {
@@ -75,6 +79,14 @@ vim.keymap.set("n", "<leader>w", function()
 	vim.opt.wrap = not vim.opt.wrap:get()
 end, { desc = "Toggle line wrapping" })
 
+vim.keymap.set("n", "<leader>s", function()
+	if vim.o.laststatus == 0 then
+		vim.o.laststatus = 3
+	else
+		vim.o.laststatus = 0
+	end
+end, { desc = "Toggle Statusline" })
+
 require("lazy").setup({
 	{
 		"ellisonleao/gruvbox.nvim",
@@ -87,7 +99,9 @@ require("lazy").setup({
 
 			vim.api.nvim_set_hl(0, "LineNr", { bg = "#121414", fg = "#7c6f64" })
 			vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "#121414", fg = "#b35e09", bold = true })
-			vim.api.nvim_set_hl(0, "SignColumn", { bg = "#121414" })
+			vim.api.nvim_set_hl(0, "SignColumn", { bg = "#121414", bold = true })
+			vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", { fg = "#b35e09", bold = true })
+			vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#3c3836", bold = true })
 		end,
 	},
 	{
@@ -255,6 +269,7 @@ require("lazy").setup({
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		event = "VeryLazy",
+		enabled = true,
 		opts = function()
 			local icons = {
 				diagnostics = { Error = " ", Warn = " ", Hint = " ", Info = " " },
@@ -263,7 +278,7 @@ require("lazy").setup({
 			return {
 				options = {
 					theme = "gruvbox",
-					globalstatus = true,
+					globalstatus = false,
 					disabled_filetypes = { statusline = { "dashboard", "alpha", "starter" } },
 				},
 				sections = {
@@ -462,11 +477,26 @@ require("lazy").setup({
 	},
 	{
 		"folke/twilight.nvim",
+		cmd = "Twilight",
+		keys = {
+			{ "<leader>ud", "<cmd>Twilight<cr>", desc = "Toggle Dimming" },
+		},
 		opts = {
-			dimming = { alpha = 0.25, color = { "Normal", "#ffffff" }, term_bg = "#000000", inactive = false },
+			dimming = {
+				alpha = 0.25,
+				color = { "Normal", "#ffffff" },
+				term_bg = "#000000",
+				inactive = false,
+			},
 			context = 10,
 			treesitter = true,
-			expand = { "function", "method", "table", "if_statement" },
+			expand = {
+				"function",
+				"method",
+				"table",
+				"if_statement",
+			},
+			exclude = {},
 		},
 	},
 	{
@@ -554,6 +584,13 @@ require("lazy").setup({
 					"selene.toml",
 					"selene.yml",
 					".git",
+				},
+				settings = {
+					Lua = {
+						diagnostics = {
+							globals = { "vim" },
+						},
+					},
 				},
 			})
 			vim.lsp.config("pyright", {
