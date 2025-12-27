@@ -6,8 +6,8 @@ background = #1c1b18
 macos-icon = custom-style 
 
 font-family = "JetBrainsMono Nerd Font"
-# font-size = 16
-font-size = 10
+font-size = 16
+# font-size = 10
 
 cursor-opacity = 1
 cursor-style=bar
@@ -87,13 +87,8 @@ keybind = cmd+backspace=unbind
 keybind = cmd+shift+comma=reload_config
 
 # Gotta bind them to something ig
-# keybind = cmd+shift+right=adjust_selection:end_of_line
-# keybind = cmd+shift+left=adjust_selection:beginning_of_line
-
-keybind = shift+up=adjust_selection:up
-# keybind = shift=down=adjust_selection:down
-keybind = shift+left=adjust_selection:left
-keybind = shift+right=adjust_selection:right
+keybind = cmd+shift+right=adjust_selection:end_of_line
+keybind = cmd+shift+left=adjust_selection:beginning_of_line
 
 # Restate two, electric boogaloo
 keybind = cmd+q=quit
@@ -136,12 +131,12 @@ window-colorspace = display-p3
 # window-width = 91
 
 # For 16 pt font
-# window-height = 36
-# window-width = 90
+window-height = 36
+window-width = 90
 
 # For 10 pt font
-window-height = 57
-window-width = 172
+# window-height = 57
+# window-width = 172
 
 # ------------------------------------------------
 
@@ -177,7 +172,7 @@ vt-kam-allowed = false
 
 # Shaders (Oh mie gahh) --------------------------------------
 custom-shader = ./shaders/bloom.glsl
-custom-shader = ./shaders/cursor_smear_fade.glsl
+# custom-shader = ./shaders/cursor_smear_fade.glsl
 custom-shader = ./shaders/cursor_blaze_no_trail.glsl
 # custom-shader = ./shaders/tft.glsl
 # custom-shader = ./shaders/bettercrt.glsl
@@ -198,3 +193,4 @@ macos-auto-secure-input = true
 macos-secure-input-indication = false
 
 bold-is-bright = true
+
