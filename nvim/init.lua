@@ -40,6 +40,10 @@ vim.opt.foldcolumn = "1"
 vim.opt.foldenable = false
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
+
+-- make the cursor a vertical bar in all modes
+-- vim.opt.guicursor = "a:ver25"
+
 vim.opt.fillchars = {
 	fold = " ",
 	foldopen = "",
@@ -180,7 +184,7 @@ require("lazy").setup({
               ⠀⠀⠀⠀⠀⠀⠻⠟⠏⠀⠈⠟⠀⡲⡉⢶⠄⡄⢰⠂⢃⠑⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                          ⠁⠒⠑⠄⠚⠂⠚⠂⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
             ]]
-			logo = string.rep("\n", 2) .. skull .. "\n\n"
+			logo = string.rep("\n", 1) .. skull .. ""
 			local opts = {
 				theme = "doom",
 				hide = { statusline = false },
