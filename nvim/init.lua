@@ -187,7 +187,7 @@ require("lazy").setup({
 			logo = string.rep("\n", 1) .. skull .. ""
 			local opts = {
 				theme = "doom",
-				hide = { statusline = false },
+				hide = { statusline = true },
 				config = {
 					header = vim.split(logo, "\n"),
 					footer = {},
@@ -311,7 +311,8 @@ require("lazy").setup({
 				},
 				sections = {
 					lualine_a = { "mode" },
-					lualine_b = { "branch" },
+					lualine_b = {},
+					--lualine_b = { "branch" },
 					lualine_c = {
 						{
 							"diagnostics",
@@ -330,28 +331,29 @@ require("lazy").setup({
 						},
 						{ "filename", path = 1, symbols = { modified = "  ", readonly = "", unnamed = "" } },
 					},
-					lualine_x = {
-						{
-							function()
-								return require("noice").api.status.command.get()
-							end,
-							cond = function()
-								return package.loaded["noice"] and require("noice").api.status.command.has()
-							end,
-							color = { fg = "#ff9e64" },
-						},
-						{
-							function()
-								return require("noice").api.status.mode.get()
-							end,
-							cond = function()
-								return package.loaded["noice"] and require("noice").api.status.mode.has()
-							end,
-							color = { fg = "#ff9e64" },
-						},
-						{ "encoding" },
-						{ "fileformat" },
-					},
+					lualine_x = {},
+					-- lualine_x = {
+					-- 	{
+					-- 		function()
+					-- 			return require("noice").api.status.command.get()
+					-- 		end,
+					-- 		cond = function()
+					-- 			return package.loaded["noice"] and require("noice").api.status.command.has()
+					-- 		end,
+					-- 		color = { fg = "#ff9e64" },
+					-- 	},
+					-- 	{
+					-- 		function()
+					-- 			return require("noice").api.status.mode.get()
+					-- 		end,
+					-- 		cond = function()
+					-- 			return package.loaded["noice"] and require("noice").api.status.mode.has()
+					-- 		end,
+					-- 		color = { fg = "#ff9e64" },
+					-- 	},
+					-- 	{ "encoding" },
+					-- 	{ "fileformat" },
+					-- },
 					lualine_y = {
 						{ "progress", separator = " ", padding = { left = 1, right = 0 } },
 						{ "location", padding = { left = 0, right = 1 } },
@@ -462,7 +464,10 @@ require("lazy").setup({
 		},
 		config = function(_, opts)
 			local notify = require("notify")
-			notify.setup(opts)
+			notify.setup({
+				background_colour = "#000000",
+				opts,
+			})
 			vim.notify = notify
 		end,
 		keys = {
@@ -722,6 +727,9 @@ require("lazy").setup({
 							["<C-k>"] = actions.move_selection_previous,
 							["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
 						},
+					},
+					preview = {
+						treesitter = false,
 					},
 					file_ignore_patterns = { "node_modules/", ".git/" },
 					layout_config = { horizontal = { preview_width = 0.55 } },
