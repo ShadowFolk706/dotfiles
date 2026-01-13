@@ -1,26 +1,198 @@
-PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:${PATH}"
-export PATH
-eval "$(/opt/homebrew/bin/brew shellenv)"
-alias nv=nvim
-alias n=nvim
-alias config='nvim ~/.config/ghostty/config'
-alias p='python3'
-alias tb='python3 ~/TypingBot.py'
-alias ':q'='exit'
-alias c='clear'
-export BASH_SILENCE_DEPRECATION_WARNING=1
-orange=$(tput setaf 2)
-red=$(tput setaf 1)
-salmon=$(tput setaf 3)
-brightGreen=$(tput setaf 12)
-bold=$(tput bold)
-reset=$(tput sgr0)
-# export PS1='\[$orange\]\u\[$reset\]\[$salmon\]@\[$red\]\W\[$reset\]\[$orange\]| '
-# export PS1='\[$salmon\]\u\[$reset$brightGreen$bold\]@\[$reset$red\]\W\[$reset$orange$bold\]| \[$reset\]'
-# export PS1='\[$red\]\W\[$reset$orange$bold\]|\[$reset\] '
-# export PS1="\[$salmon$bold\]┌──╼\[$reset\] ⇀ \[$reset$orange\]\u\[$reset\] ⇀ \[$reset$red\]\W\[$reset\]\n\[$salmon$bold\]└╼ \[$reset\]"
-export PS1="\[$salmon$bold\]┌──╼ \[$reset$orange\]\u\[$reset\] ⇀ \[$reset$red\]\W\[$reset\]\n\[$salmon$bold\]└╼ \[$reset\]"
-# default
-# export PS1='\u@\h:\w\$ '
+# theme = DeFualt
+theme = Gruvbox Dark Hard
+# background = #000000
+background = #1c1b18
 
-export PS2='\[$orange$bold\]> '
+macos-icon = custom-style 
+
+font-family = "JetBrainsMono Nerd Font"
+font-size = 16
+# font-size = 10
+
+cursor-opacity = 1
+cursor-style=bar
+cursor-style-blink = true
+cursor-click-to-move = true
+
+mouse-hide-while-typing = true
+
+background-opacity = 0.85
+# background-opacity = 1
+background-blur = 17
+
+unfocused-split-fill = #000000
+split-divider-color = #eadcb2
+
+link-url = true
+
+# command = nothing!!!
+
+maximize = false
+fullscreen = false
+
+title = " " 
+
+# keybinds
+keybind = global:cmd+opt+comma=toggle_quick_terminal
+
+# tabs stabs
+keybind = cmd+t=new_tab
+
+keybind = cmd+opt+left=previous_tab
+keybind = cmd+opt+right=next_tab
+
+# keybind = cmd+option+1=goto_tab:1
+# keybind = cmd+option+2=goto_tab:2
+# keybind = cmd+option+3=goto_tab:3
+# keybind = cmd+option+4=goto_tab:4
+# keybind = cmd+option+5=goto_tab:5
+# keybind = cmd+option+6=goto_tab:6
+# keybind = cmd+option+7=goto_tab:7
+# keybind = cmd+option+8=goto_tab:8
+# keybind = cmd+option+9=goto_tab:9
+
+keybind = cmd+0=last_tab
+
+# split shit
+keybind = opt+d=new_split:right
+keybind = opt+s=new_split:left
+keybind = opt+w=new_split:up
+keybind = opt+shift+w=new_split:down
+
+keybind = opt+left=resize_split:left,10
+keybind = opt+right=resize_split:right,10
+keybind = opt+up=resize_split:up,10
+keybind = opt+down=resize_split:down,10
+
+keybind = opt+shift+left=goto_split:left
+keybind = opt+shift+right=goto_split:right
+keybind = opt+shift+up=goto_split:up
+keybind = opt+shift+down=goto_split:down
+
+#unbind, out of mind
+keybind = cmd+1=unbind
+keybind = cmd+2=unbind
+keybind = cmd+3=unbind
+keybind = cmd+4=unbind
+keybind = cmd+5=unbind
+keybind = cmd+6=unbind
+keybind = cmd+7=unbind
+keybind = cmd+8=unbind
+keybind = cmd+9=unbind
+
+keybind = cmd+comma=unbind
+keybind = cmd+backspace=unbind
+
+# Restate, no more prostate (cancer)
+keybind = cmd+shift+comma=reload_config
+
+# Gotta bind them to something ig
+keybind = cmd+shift+right=adjust_selection:end_of_line
+keybind = cmd+shift+left=adjust_selection:beginning_of_line
+
+# Restate two, electric boogaloo
+keybind = cmd+q=quit
+keybind = cmd+w=close_surface
+keybind = cmd+n=new_window
+keybind = cmd+a=select_all
+keybind = cmd+c=copy_to_clipboard
+keybind = cmd+v=paste_from_clipboard
+
+keybind = cmd+equal=increase_font_size:1
+keybind = cmd+minus=decrease_font_size:1
+keybind = cmd+zero=reset_font_size
+
+keybind = cmd+k=clear_screen
+
+# Gotta go fast
+keybind = cmd+up=scroll_page_lines:10
+keybind = cmd+down=scroll_page_lines:10
+
+# SUPER FAST EDITING
+keybind = cmd+backspace=text:\x15
+keybind = cmd+shift+backspace=text:\x19
+keybind = opt+left=text:\x1b\x62
+keybind = opt+right=text:\x1b\x66
+
+window-padding-x = 1
+window-padding-y = 1
+
+window-inherit-font-size = true
+
+window-subtitle = working-directory
+
+window-theme = dark
+
+window-colorspace = display-p3
+
+# ------------------------------------------------
+
+# window-height = 21
+# window-width = 91
+
+# For 16 pt font
+window-height = 36
+window-width = 90
+
+# For 10 pt font
+# window-height = 57
+# window-width = 172
+
+# ------------------------------------------------
+
+# window-position-x = 269
+# window-position-y = 198
+
+window-position-x = 268
+window-position-y = 30
+
+window-new-tab-position = end
+
+resize-overlay = always
+resize-overlay-position = center
+resize-overlay-duration = 750ms
+
+clipboard-trim-trailing-spaces = false
+clipboard-paste-protection = true
+
+copy-on-select = false
+
+confirm-close-surface = false
+
+quit-after-last-window-closed = false
+
+initial-window = true
+
+quick-terminal-position = center
+quick-terminal-space-behavior = remain
+quick-terminal-autohide = false
+
+shell-integration = detect
+shell-integration-features = no-cursor, sudo, no-title
+
+vt-kam-allowed = false
+
+
+# Shaders (Oh mie gahh) --------------------------------------
+custom-shader = ./shaders/bloom.glsl
+# custom-shader = ./shaders/cursor_smear_fade.glsl
+custom-shader = ./shaders/cursor_blaze_no_trail.glsl
+# custom-shader = ./shaders/tft.glsl
+# custom-shader = ./shaders/bettercrt.glsl
+# custom-shader = ./shaders/starfield.glsl
+# custom-shader = ./shaders/sparks-from-fire.glsl
+# custom-shader = ./shaders/StarshipReentry.glsl
+# ------------------------------------------------------------
+
+bell-features = system, audio, no-attention, no-title, no-border
+bell-audio-volume = .5
+
+macos-titlebar-style = native
+window-decoration = true
+macos-titlebar-proxy-icon = visible
+
+macos-auto-secure-input = true
+
+macos-secure-input-indication = false
+
+bold-is-bright = true
