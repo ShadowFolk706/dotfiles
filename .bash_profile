@@ -6,6 +6,7 @@ alias n=nvim
 alias config='nvim ~/.config/ghostty/config'
 alias p='python3'
 alias tb='python3 ~/TypingBot.py'
+alias ':q'='exit'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 orange=$(tput setaf 2)
 red=$(tput setaf 1)
