@@ -9,9 +9,10 @@ ui:
 
   layout:
     # pages: [nowPlaying, queue, search]
-    pages: [search, queue, nowPlaying]
-    cols: 2
-    rows: 2
+    # pages: [search, queue, nowPlaying]
+    pages: [nowPlaying]
+    cols: 1
+    rows: 1
 
 settings:
   disableResize: false
