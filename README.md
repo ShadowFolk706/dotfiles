@@ -21,6 +21,7 @@ Image displays nvim dashboard on the left, fastfetch on the top right, and yator
 <img width="2100" height="1312" alt="Demo" src="https://github.com/user-attachments/assets/cc4eb24e-6955-4752-b6e3-38ee82c3f1b7" />
 
 URLs to GitHub repos:
+
 https://github.com/ghostty-org/ghostty
 
 https://github.com/neovim/neovim
@@ -28,6 +29,7 @@ https://github.com/neovim/neovim
 https://github.com/jayadamsmorgan/Yatoro
 
 The alias 'tb' in my .bash_profile is an alias to run my Typing Bot program available on my GitHub at this URL:
+
 https://github.com/ShadowFolk706/TypingBot
 
 The Python file is stored in my home directory and I can easily run it with this alias instead of typing a pathname every time I want to use it
