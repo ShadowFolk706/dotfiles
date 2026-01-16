@@ -19,6 +19,7 @@ A collection of my Dotfiles for the configuration of:
     - PS1 and PS2 (prompt) customization
 
 Demo Image Information:
+
 Image displays nvim dashboard on the left, fastfetch on the top right, and yatoro music player in the bottom right. All are splits handled by Ghostty without any plugins necessary. The nvim Dashboard split is highlighted and that is why it appears to be displayed better, non-focussed splits are dimmed until selected.
 
 URLs to GitHub repos:
