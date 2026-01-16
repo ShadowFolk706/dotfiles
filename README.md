@@ -13,8 +13,18 @@ A collection of my Dotfiles for the configuration of:
     - Album Cover Settings
 - Bash Profile
     - Aliases
+          - Aliases were created with other commands in mind, if a potential alias was already a command, then a different alias was used, these aliases will work with default packages; however, if you have another package installed that uses an alias to be called, simply change the alias to prevent one of the commands not working.
     - PS1 and PS2 (prompt) customization
 
 Demo Image:
-Image displays nvim dashboard on the left, fastfetch on the top right, and yatoro music player in the bottom right. All are splits handled by Ghostty without any plugins necessary.
+Image displays nvim dashboard on the left, fastfetch on the top right, and yatoro music player in the bottom right. All are splits handled by Ghostty without any plugins necessary. The nvim Dashboard split is highlighted and that is why it appears to be displayed better, non-focussed splits are dimmed until selected.
 <img width="2100" height="1312" alt="Demo" src="https://github.com/user-attachments/assets/cc4eb24e-6955-4752-b6e3-38ee82c3f1b7" />
+
+URLs to GitHub repos:
+https://github.com/ghostty-org/ghostty
+https://github.com/neovim/neovim
+https://github.com/jayadamsmorgan/Yatoro
+
+The alias 'tb' in my .bash_profile is an alias to run my Typing Bot program available on my GitHub at this URL:
+https://github.com/ShadowFolk706/TypingBot
+The Python file is stored in my home directory and I can easily run it with this alias instead of typing a pathname every time I want to use it
