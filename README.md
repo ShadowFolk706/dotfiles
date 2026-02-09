@@ -17,6 +17,7 @@ A collection of my Dotfiles for the configuration of:
     - Aliases
       - Aliases were created with other commands in mind, if a potential alias was already a command, then a different alias was used, these aliases will work with default packages; however, if you have another package installed that uses an alias to be called, simply change the alias to prevent one of the commands not working.
     - PS1 and PS2 (prompt) customization
+    - Make sure to run "source ~/.bash_profile" or quit and relaunch your terminal emulator every time you update your bash_profile to apply the changes.
 
 Yatoro Config:
 <img width="1440" height="900" alt="Skjermbilde 2026-02-05 kl  9 55 08 am" src="https://github.com/user-attachments/assets/c8f8ebb2-73e2-4e1b-8cb7-b448d2f87a40" />
