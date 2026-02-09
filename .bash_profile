@@ -10,6 +10,11 @@ alias ':q'='exit'
 alias c='clear'
 alias nst='sudo pmset -a disablesleep 1'
 alias nsf='sudo pmset -a disablesleep 0'
+alias define='~/scripts/define'
+alias cpn='pwd | pbcopy'
+
+alias gcd='cd <<<<insert a directory here to quickly get to and change it as much as you need!>>>>'
+
 export BASH_SILENCE_DEPRECATION_WARNING=1
 green=$(tput setaf 2)
 red=$(tput setaf 1)
