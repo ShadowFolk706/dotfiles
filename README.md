@@ -18,9 +18,14 @@ A collection of my Dotfiles for the configuration of:
       - Aliases were created with other commands in mind, if a potential alias was already a command, then a different alias was used, these aliases will work with default packages; however, if you have another package installed that uses an alias to be called, simply change the alias to prevent one of the commands not working.
     - PS1 and PS2 (prompt) customization
 
+Yatoro Config:
+<img width="1440" height="900" alt="Skjermbilde 2026-02-05 kl  9 55 08 am" src="https://github.com/user-attachments/assets/c8f8ebb2-73e2-4e1b-8cb7-b448d2f87a40" />
+
 Demo Image Information:
 
-Image displays nvim dashboard on the left, fastfetch on the top right, and yatoro music player in the bottom right. All are splits handled by Ghostty without any plugins necessary. The nvim Dashboard split is highlighted and that is why it appears to be displayed better, non-focussed splits are dimmed until selected.
+Image 1 displays nvim dashboard on the left, fastfetch on the top right, and yatoro music player in the bottom right. All are splits handled by Ghostty without any plugins necessary. The nvim Dashboard split is highlighted and that is why it appears to be displayed better, non-focussed splits are dimmed until selected.
+
+Image 2 displays a configured Yatoro window playing "Circle of Death" by Flawed Mangoes. Note only the search and nowPlaying windows are shown, queue is currently disabled but it is simply commented out in the file.
 
 URLs to GitHub repos:
 
